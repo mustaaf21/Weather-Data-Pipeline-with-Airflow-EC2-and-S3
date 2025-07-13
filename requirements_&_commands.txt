@@ -1,0 +1,34 @@
+
+AWS Account with:
+S3 bucket created (e.g., airflowweatherapibucket)
+IAM Role/Access Key with S3 permissions
+EC2 instance (Ubuntu recommended) with instance type t2.small at the least
+Python 3.8+ installed on your EC2
+Airflow installed and configured on EC2
+OpenWeather API Key
+
+
+Commands:: 
+Commands to install python on your EC2
+•	sudo apt update 
+•	sudo apt install python3-pip 
+•	sudo apt install python3.12-venv 
+
+Commands to create a virtual env and activate it 
+•	python3 -m venv airflow_venv 
+•	source airflow_vevn/bin/activate
+
+Commands to install pandas, s3fs, botos, apache-airflow, awscli
+•	install pandas 
+•	install s3fs 
+•	install apache-airflow 
+•	install boto3 
+•	install awscli
+
+Commands to run airflow 
+•	airflow standalone
+
+Commands to run airflow with out logs blocking your terminal 
+•	airflow standalone > airflow.log 2>&1 & 
+•	tail -n 50 airflow.log  (to access the logs)
+
