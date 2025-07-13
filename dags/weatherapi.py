@@ -1,7 +1,7 @@
 from airflow import DAG
 from datetime import timedelta, datetime
 from airflow.providers.http.sensors.http import HttpSensor
-from api_config import FULL_WEATHER_URL,S3_BUCKET_NAME
+from config import FULL_WEATHER_URL,S3_BUCKET_NAME
 import json
 from airflow.providers.http.operators.http import HttpOperator
 from airflow.providers.standard.operators.python import PythonOperator
